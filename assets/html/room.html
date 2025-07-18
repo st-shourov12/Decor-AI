@@ -9,20 +9,23 @@
 <body>
     <header>
         <nav class="sb">
-            <img src="../img/homepage/Vector.png" alt="">
+            <figure>
+                <img src="../img/homepage/Vector.png" alt="">
+            </figure>
+            
             <ul class="header-btn-box align-center">
                 <li class="btn-neu"><a href="">Generate</a></li>
-                <li class="btn-neu"><a href="">Edit Image</a></li>
-                <li class="btn-neu"><a href="">Drag & Decorate</a></li>
+                <li class="btn-light"><a href="">Edit Image</a></li>
+                <li class="btn-light"><a href="">Drag & Decorate</a></li>
             </ul>
-            <div class="upgrade-container">
+            <div class="upgrade-container align-center">
                 <button class="btn-primary">Upgrade to Pro</button>
                 <img src="../img/homepage/bhaiya.png" alt="">
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="flex text-center">
 
         <div class="sidebar-sm">
                 <div class="tools-1">
@@ -60,6 +63,52 @@
                     
                 </div>
         </div>
+        <!-- =======main content======= -->
+        <section class="main-content flex-center text-center flex-column">
+            <h2 class="title">
+                How do you want to start this project?
+            </h2>
+            <div class="input-container flex">
+                <div class="card">
+                    <div class="input-card flex-column flex-center text-center">
+                        <label for="url" class="flex-column flex-center text-center">
+                            <img src="../img/homepage/url.png" alt="">
+                            <h3 class="card-title">Upload from URL</h3>
+                            <p class="card-description">Paste an image link in JPG or PNG format</p>
+                            <input type="url" id="url" onchange="alert('File selected!')">
+                        </label>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="input-card flex-column flex-center text-center">
+                        <label for="file" class="flex-column flex-center text-center">
+                            <img src="../img/homepage/download-file.png" alt="">
+                            <h3 class="card-title">Upload from device</h3>
+                            <p class="card-description">Upload your own image in JPG or PNG format</p>
+
+                            <input type="file" id="file" accept="image/*" style="display: none;" onchange="alert('File selected!')">
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="input-card">
+                        <label for="file-2" class="flex-column flex-center text-center">
+                            <img src="../img/homepage/history.png" alt="">
+                            <h3 class="card-title">Choose from History</h3>
+                            <p class="card-description">Pick a previous image and reimagine it</p>
+                            <input type="file" id="file-2" accept="image/*" style="display: none;" onchange="alert('File selected!')">
+                        </label>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 </html>
